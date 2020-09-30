@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">	<!-- Awesome Fonts CSS -->
+	<title>
+	</title>
+</head>
+<body>
+	<!-- Inicio del Menu  -->
+	<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: purple;">
+		<a class="navbar-brand" href="#">Tienda Don Jose </a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="inicio.html">Inicio<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="lista_productos.html">Productos<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="quienes_somos.html">Sobre Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html"> Login <div class="fas fa-user"></div></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Fin del Menu  -->
+	<!-- Inicio del contenido  -->
+	<div class="container">
+		<center>
+			<h1>Agregar Producto</h1>
+		</center>
+		<div class="row justify-content-center">
+			<form action="" method="POST" enctype="multipart/form-data">
+				<label for="id_nombre">Nombre:</label> 
+				<input class = "form-control" type="text" name="nombre" maxlength="100" required="" id="id_nombre">	</br>
+				<label for="id_precio">Precio:</label> 
+				<input class = "form-control" type="number" name="precio" required="" id="id_precio">	</br>
+				<label for="id_stock">Stock:</label> 
+				<input class = "form-control" type="number" name="stock" required="" id="id_stock">	</br>
+				<label for="id_status">Status:</label> 
+				<input class = "form-control" type="checkbox" name="status" id="id_status" checked="">	</br>
+				<label for="id_foto">Foto:</label> 
+				<input class = "form-control" type="file" name="foto" id="id_foto">	</br>
+				<label for="id_marca">Marca:</label> 
+				<select class = "form-control" name="marca" required="" id="id_marca">
+					  <option value="" selected="">---------</option>
+					  <option value="1">doña chepa</option>
+					  <option value="2">otra marca</option>
+					  <option value="4">cocacola</option>
+					  <option value="3">colharinas</option>
+				</select>	</br>
+				<label for="id_categoria">Categoria:</label> 
+				<select class = "form-control" name="categoria" id="id_categoria" multiple="multiple">
+	  				<option value="1">fritanga</option>
+					<option value="2">categoria2</option>
+				</select> </br>
+				<input class="btn btn-primary" type="submit" name="Agregar" value="Guardar Cambios">
+			</form>
+		</div>
+		<center>
+			<a href="lista_productos.html">regresar a lista productos</a>
+		</center>
+	</div>	
+	<!-- Fin del contenido  -->
+</body>
+
+</html>
